@@ -1,0 +1,188 @@
+
+.atkinson-hyperlegible-next- <uniquifier> {
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-weight; 100;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font: normal 16px;
+    font-optical-sizing: 400;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.full_container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+nav {
+    background: #a4c274;
+    color: beige;
+    height: 100px;
+}
+
+nav .portfolio {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 11px;
+}
+
+nav .full_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-left: 40px;
+    padding-top: 13px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 25px;
+    word-spacing: 10px;
+    line-height: 1.2;
+}
+
+.header {
+    background-color: white;
+    min-height: 400px;
+    line-height: 1.2;
+}
+
+.header .full_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1.2;
+}
+
+.header h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #a4c274;
+    line-height: 1.2;
+}
+
+.header p {
+    font-size: 1.5rem;
+    color: a4c274;
+    line-height: 1;
+    font-weight: bold;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    border-radius: 7px;
+    background: #a4c274;
+    color: whitesmoke;
+    font: bold uppercase;
+    text-shadow: none;
+    text-decoration-color:black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 700px;
+    min-width: 450px;
+    max-height: 600px;
+    height: auto;
+    margin-right: 100px;
+    margin-top: -130px;
+    margin-bottom: 40px;
+}
+
+#text {
+    color: black;
+}
+
+.flexbox .full_container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+
+.boxes {
+    flex: 1;
+    background-color: rgba(161, 120, 81, 0.8);
+    color: black;
+    border-radius: 15px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+}
+
+
+
+.lower {
+    background-color: rgba(237, 250, 214, 0.8);
+    padding-bottom: 60px;
+}
+
+.boxes h2 {
+    color: black;
+}
+
+main {
+    flex-grow: 1;
+}
+  footer {
+    background: #a4c274;
+    height: 50px;
+    color: white; 
+    text-align: center;
+    padding-top: 15px;
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .header .full_container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
